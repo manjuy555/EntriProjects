@@ -3,6 +3,7 @@
   padding: 0;
   color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
   /* outline:2px solid red; */
 }
 
@@ -34,12 +35,77 @@ body {
   opacity: 0.91;
 }
 
-.btn-login {
+.btn-login,
+.btn-catalog {
   color: white;
   background-color: black;
   border-radius: 40px;
 }
 
+/* grid practice section */
+.btn-catalog {
+  color: white;
+  background-color: black;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.img-div {
+  height: 200px;
+  width: 200px;
+}
+.main-container {
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: space-around; */
+  padding: 40px 160px;
+  gap: 120px;
+  /* grid-template-columns: repeat(2,1fr); */
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  width: 500px;
+}
+
+.left-container p {
+  font-size: x-large;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+.btn-catalog {
+  font-size: larger;
+  height: 60px;
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+.right-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 12px;
+}
+
+.img-grid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.right-container img:nth-of-type(4) {
+  grid-column: 1/3;
+}
+
+/* middle section */
 .middle-section {
   margin: 40px 0px;
   display: flex;

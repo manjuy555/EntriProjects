@@ -26,7 +26,7 @@
   justify-content: space-between;
 }
 h1 {
-  color: rgb(117, 3, 224);
+  color: #750350;
   width: 100%;
 }
 
@@ -56,16 +56,16 @@ h1 {
 }
 .item a {
   text-decoration: none;
-  color: blueviolet;
+  color: #750350;
   display: flex;
   gap: 10px;
-  border: 2px solid blueviolet;
+  border: 2px solid #750350;
   border-radius: 5px;
   padding: 10px;
 }
 
 .item a:hover {
-  background-color: blueviolet;
+  background-color: #750350;
   color: white;
 }
 
@@ -81,7 +81,7 @@ h1 {
 }
 
 .header-left input:focus {
-  outline: 2px solid blueviolet;
+  outline: 2px solid #750350;
 }
 
 .navigation {
@@ -144,7 +144,7 @@ select:hover {
   gap: 5px;
 }
 .item:hover {
-  border: 2px solid blueviolet;
+  border: 2px solid #750350;
   transform: scale(0.98);
   opacity: 0.8;
 }

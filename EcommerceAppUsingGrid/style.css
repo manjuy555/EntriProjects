@@ -176,7 +176,6 @@ select:hover {
   grid-column: 4; */
   grid-row: span 2;
 }
-
 h6 {
   color: white;
   opacity: 0.6;
@@ -188,4 +187,66 @@ h6 {
   display: flex;
   padding-top: 10px;
   gap: 15px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Tablet View */
+
+@media (max-width: 1024px) {
+  .main {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container {
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 90px;
+    position: relative;
+  }
+
+.menu-icon {
+    display: block;
+    padding-top: 5px;
+    font-size: x-large;
+  }
+
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 70px;
+    background: white;
+    width: 260px;
+  }
+
+
+  #menu-toggle:checked ~ .navigation {
+    display: flex;
+  }
+
+}
+
+
+  
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .main {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.header-left input {
+  width: 200px;
+}
+
+
 }

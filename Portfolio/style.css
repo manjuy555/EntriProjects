@@ -137,10 +137,6 @@ input[type="submit"]:hover {
 
 /* Experience */
 
-.experience {
-  margin-top: 40px;
-}
-
 h3 {
   text-align: center;
   font-size: xx-large;
@@ -148,6 +144,8 @@ h3 {
 }
 
 .experience {
+  margin-top: 40px;
+
   display: grid;
   grid-template-columns: 2fr 2fr;
   gap: 40px;
@@ -325,4 +323,79 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   color: #d4d4d4;
   font-size: 14px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Tablet View */
+/* @media (min-width: 769px) and (max-width: 1024px) { */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 31px;
+  }
+  nav {
+    position: relative;
+  }
+
+  .menu-icon {
+    display: block;
+    padding-right: 40px;
+    font-size: x-large;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    right: 30px;
+    background: rgba(10, 14, 39, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    flex-direction: column;
+    z-index: 9999;
+    width: 100%;
+  }
+
+  .menu a {
+    padding: 12px 40px;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  #menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .buttons {
+    width: 60%;
+  }
+
+  .experience {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .git {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 29px;
+  }
+  .buttons {
+    width: 70%;
+  }
 }

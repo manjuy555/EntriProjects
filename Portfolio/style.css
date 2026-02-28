@@ -96,6 +96,7 @@ h2 {
   border-radius: 8px;
   background: transparent;
   border: 2px solid #4ecdc4;
+  text-align: center;
 }
 
 .buttons a:hover,
@@ -377,7 +378,7 @@ footer {
   }
 
   .buttons {
-    width: 60%;
+    width: 70%;
   }
 
   .experience {
@@ -387,7 +388,21 @@ footer {
 
   .git {
     grid-template-columns: 1fr;
+    padding: 40px 0;
+    gap:20px;
+
   }
+
+  .left-contact-details {
+  padding: 0;
+  
+}
+
+.buttons a {
+  padding: 5px;
+  font-size: 15px;
+  
+}
 }
 
 /* Mobile View */
@@ -396,6 +411,11 @@ footer {
     font-size: 29px;
   }
   .buttons {
-    width: 70%;
+    width: 100%;
   }
+  .buttons a {
+  padding: 5px;
+  font-size: 13px;
+  
+}
 }
